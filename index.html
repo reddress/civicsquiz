@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home - Civics Quiz</title>
+        <style>
+         html, body {
+             font-size: 1em;
+             margin: 1em;
+         }
+
+         input[type=button] {
+             font-size: 1.1em;
+         }
+
+         #gotItButton {
+             background-color: #8F8;
+         }
+
+         #reviewButton {
+             background-color: #F88;
+         }
+
+         div {
+             margin-bottom: 1em;
+         }
+         
+         ul {
+             list-style-position: inside;
+             margin: 0;
+             padding: 0;
+         }
+
+         ul li {
+             padding-left: 0.5em;
+             margin-left: 0.5em;
+         }
+         
+        </style>
+    </head>
+    <body>
+        <div id="question_choice">
+            USCIS.gov 
+            <a href="https://www.uscis.gov/citizenship/learners/study-test/study-materials-civics-test/100-civics-questions-and-answers-mp3-audio-english-version" target="_blank">100 Civics Questions and Answers</a> (visited on Apr. 30, 2017)
+            <br><br>
+
+            For better results, please write down your answers on paper before revealing the answer.
+            <br><br>
+            Choose a set of questions:
+            <br><br>
+            
+            <input type="button" id="set1" value="Questions 1-5">
+            <br><br>
+            <input type="button" id="set2" value="Questions 6-10">
+            <br><br>
+            <!-- TODO: Checkboxes -->
+            <!-- TODO: Randomly pick 10-20 out of all 100 -->
+        </div>
+
+        <div id="question">
+        </div>
+
+        <div id="reveal">
+            <input type="button" id="revealButton" value="Show answer">
+        </div>
+        
+        <div id="answer">
+        </div>
+        <div id="questionControls">
+            <input type="button" id="gotItButton" value="Yes, I got the right answer">
+            <br><br><br>
+            <input type="button" id="reviewButton" value="No, I need to review this">
+        </div>
+
+        <div id="reviewList">
+        </div>
+
+        <div id="reset">
+            <input type="button" id="resetButton" value="Start over">
+        </div>
+    </body>
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</html>
